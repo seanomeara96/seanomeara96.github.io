@@ -1,0 +1,6 @@
+.live-websites {
+  &__preview-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

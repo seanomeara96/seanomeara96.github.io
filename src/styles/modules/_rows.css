@@ -1,4 +1,10 @@
 .rows {
+  &--gutters {
+    & > div {
+      padding-right: 1rem;
+    }
+    margin-right: -1rem;
+  }
   display: flex;
   position: relative;
   &--full {
@@ -9,5 +15,8 @@
   }
   &__62 {
     width: 62%;
+  }
+  &__50 {
+    width: 50%;
   }
 }
