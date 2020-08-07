@@ -1,0 +1,10 @@
+.headline {
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+  &--cursive {
+    font-family: "Courgette", cursive;
+  }
+  &--no-m {
+    margin-top: 0;
+  }
+}

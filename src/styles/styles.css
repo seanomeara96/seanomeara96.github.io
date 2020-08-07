@@ -3,3 +3,11 @@
 @import "./base/_mixins.css";
 @import "./base/_global.css";
 @import "./modules/_null.css";
+@import "./modules/_headline.css";
+@import "./modules/_page-section.css";
+@import "./modules/_wrapper.css";
+@import "./modules/_rows.css";
+@import "./modules/_intro.css";
+@import "./modules/_personal-details.css";
+@import "./modules/_icon.css";
+@import "./modules/_education.css";

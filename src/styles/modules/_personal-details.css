@@ -1,0 +1,11 @@
+.personal-details {
+  i {
+    margin-right: 0.6rem;
+  }
+  &__item {
+    margin-bottom: 0.6rem;
+  }
+  &__link {
+    color: $blue;
+  }
+}

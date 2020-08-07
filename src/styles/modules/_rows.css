@@ -1,0 +1,13 @@
+.rows {
+  display: flex;
+  position: relative;
+  &--full {
+    height: 100%;
+  }
+  &__38 {
+    width: 38%;
+  }
+  &__62 {
+    width: 62%;
+  }
+}

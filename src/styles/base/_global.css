@@ -1,3 +1,16 @@
-*, *::before, *::after {
-    box-sizing:border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 141.42vw;
+  color: $black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+aside {
+  background: $grey;
 }
