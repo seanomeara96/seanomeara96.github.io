@@ -1,0 +1,6 @@
+.preview-img {
+  height: 100px;
+  width: 170px;
+  object-fit: cover;
+  object-position: center;
+}
