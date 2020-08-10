@@ -6,4 +6,5 @@
   margin-left: 38%;
   text-align: center;
   background-color: $othergrey;
+  box-sizing: content-box;
 }
