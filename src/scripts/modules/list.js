@@ -1,1 +1,1 @@
-export const sites = ["craughwell-furniture","hugh-lynches"]
+export const sites = ["craughwell-furniture","gallery-homepage","hugh-lynches"]
