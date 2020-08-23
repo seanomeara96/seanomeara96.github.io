@@ -1,0 +1,7 @@
+.profile-img {
+  height: 10rem;
+  width: 10rem;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}

@@ -5,8 +5,8 @@ sites.forEach((item) => {
   console.log(item);
   siteList.insertAdjacentHTML(
     "beforeend",
-    `<div>
-      <a href="./sites/${item}/index.html">${item}</a>
-    </div>`
+    `<li class="sites__item">
+      <a href="./sites/${item}/index.html"> ${item}</a>
+    </li>`
   );
 });

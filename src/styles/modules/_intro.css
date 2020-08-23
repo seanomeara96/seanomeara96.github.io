@@ -1,16 +1,7 @@
 .intro {
-  &__img {
-    width: 14rem;
-    height: 14rem;
-    border-radius: 50%;
-    margin: auto;
-    overflow: hidden;
-    img {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      object-position: center;
-      object-fit: cover;
-    }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
