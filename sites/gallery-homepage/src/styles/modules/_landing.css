@@ -1,0 +1,40 @@
+.landing-text {
+  height: 100%;
+  width: 75%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &__inner {
+    position: relative;
+    padding-bottom: 3rem;
+  }
+  &__small {
+    margin-bottom: 0;
+  }
+  &__extra-large {
+    font-size: 1.6rem;
+    @mixin atSmall {
+      font-size: 2.4rem;
+    }
+  }
+}
+.landing-hero {
+  width: 100%;
+  height: 38%;
+  @mixin atMedium {
+    width: 38%;
+    height: 100%;
+  }
+  position: relative;
+  img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    object-position: center;
+    object-fit: cover;
+  }
+}

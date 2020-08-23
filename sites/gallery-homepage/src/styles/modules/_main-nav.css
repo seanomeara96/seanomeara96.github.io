@@ -1,0 +1,19 @@
+.main-nav {
+  display: none;
+  @mixin atSmall {
+    display: block;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 1rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,9 @@
+.main-body {
+  width: 100%;
+  height: 62%;
+  @mixin atMedium {
+    width: 62%;
+    height: 100%;
+  }
+  padding: 3rem;
+}
