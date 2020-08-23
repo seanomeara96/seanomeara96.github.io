@@ -12,7 +12,7 @@ const postcssPlugins = [
   require("postcss-nested"),
   require("autoprefixer"),
 ];
-
+console.log("directory", __dirname.split(`\\`).pop());
 class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap("Copy Images", () => {
