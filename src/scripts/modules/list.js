@@ -1,0 +1,1 @@
+export const sites = ["craughwell-furniture","hugh-lynches"]

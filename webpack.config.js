@@ -86,7 +86,6 @@ if (currentTask == "build") {
     splitChunks: { chunks: "all" },
   };
   config.plugins.push(
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: "styles.[chunkhash].css" }),
     new RunAfterCompile()
   );
