@@ -1,0 +1,43 @@
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  @mixin atMedium {
+    height: 46.6vw;
+    width: 75vw;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  &__slide {
+    transition: all ease-in 0.5s;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    &--is-hidden {
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0;
+    }
+  }
+}

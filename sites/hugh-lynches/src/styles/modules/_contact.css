@@ -1,0 +1,13 @@
+.contact {
+  &__input,
+  &__text-area {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+  &__btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+}

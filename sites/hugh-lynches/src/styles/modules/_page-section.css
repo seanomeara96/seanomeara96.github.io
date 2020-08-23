@@ -1,0 +1,16 @@
+.page-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  &--null-at-small {
+    padding-top: 0;
+    padding-bottom: 0;
+    @mixin atMedium {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  &--extra {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}

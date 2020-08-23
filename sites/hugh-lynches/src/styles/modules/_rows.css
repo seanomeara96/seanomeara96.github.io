@@ -1,0 +1,22 @@
+.rows {
+  @mixin atMedium {
+    display: flex;
+    align-items: stretch;
+    margin-right: -1rem;
+    & > div {
+      padding-right: 1rem;
+    }
+    &__38 {
+      width: 38%;
+    }
+    &__33 {
+      width: 33%;
+    }
+    &__62 {
+      width: 62%;
+    }
+    &__50 {
+      width: 50%;
+    }
+  }
+}

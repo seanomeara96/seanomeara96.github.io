@@ -1,0 +1,10 @@
+.map {
+  height: 100vw;
+  width: 100%;
+  @mixin atSmall {
+    height: 62vw;
+  }
+  @mixin atMedium {
+    height: 38vw;
+  }
+}
