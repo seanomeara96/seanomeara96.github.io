@@ -3,7 +3,7 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   height: 80vh;
-  width: 80vh;
+  min-width: 80vh;
   overflow: hidden;
 }
 .tile {

@@ -16,7 +16,10 @@ const postcssPlugins = [
 class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap("Copy Images", () => {
-      fse.copySync("./src/images", `../../dist/${__dirname}/images`);
+      fse.copySync(
+        "./src/images",
+        `../../dist/sites/${__dirname.split(`\\`).pop()}/images`
+      );
     });
   }
 }
@@ -73,13 +76,15 @@ if (currentTask == "build") {
       },
     },
   });
-
   cssConfig.use.unshift(MiniCssExtractPlugin.loader);
   postcssPlugins.push(require("cssnano"));
   config.output = {
-    filename: "[name].[chunkhash].js",
-    chunkFilename: "[name].[chunkhash].js",
-    path: path.resolve(__dirname, `../../dist/${__dirname}`),
+    filename: `${__dirname.split(`\\`).pop()}.[chunkhash].js`,
+    chunkFilename: `${__dirname.split(`\\`).pop()}.[chunkhash].js`,
+    path: path.resolve(
+      __dirname,
+      `../../dist/sites/${__dirname.split(`\\`).pop()}`
+    ),
   };
   config.mode = "production";
   config.optimization = {
@@ -87,9 +92,10 @@ if (currentTask == "build") {
   };
   config.plugins.push(
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({ filename: "styles.[chunkhash].css" }),
+    new MiniCssExtractPlugin({
+      filename: `${__dirname.split(`\\`).pop()}.[chunkhash].css`,
+    }),
     new RunAfterCompile()
   );
 }
-
 module.exports = config;
