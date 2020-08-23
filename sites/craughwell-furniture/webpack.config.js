@@ -18,7 +18,7 @@ class RunAfterCompile {
     compiler.hooks.done.tap("Copy Images", () => {
       fse.copySync(
         "./src/images",
-        `../../dist/sites/${__dirname.split(`\\`).pop()}/images`
+        `../../docs/sites/${__dirname.split(`\\`).pop()}/images`
       );
     });
   }
@@ -83,7 +83,7 @@ if (currentTask == "build") {
     chunkFilename: `${__dirname.split(`\\`).pop()}.[chunkhash].js`,
     path: path.resolve(
       __dirname,
-      `../../dist/sites/${__dirname.split(`\\`).pop()}`
+      `../../docs/sites/${__dirname.split(`\\`).pop()}`
     ),
   };
   config.mode = "production";
