@@ -1,14 +1,19 @@
-import $ from "jquery";
 import "../styles/styles.css";
-import "./slick/slick";
-import "./jquery/dist/jquery.js";
-$(document).ready(function () {
-  $(".slides").slick({
-    accessibility: true,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: false,
-    speed: 700,
-  });
-});
+const slides = document.querySelectorAll(".slide");
+for (let i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+let count = 1;
+function slideshow() {
+  slides[count - 1].style.display = "none";
+  slides[count].style.display = "block";
+  count++;
+  if (count === slides.length) {
+    count = 1;
+  }
+  setTimeout(() => {
+    slideshow();
+  }, 3000);
+}
+
+slideshow();
