@@ -1,3 +1,6 @@
 .rows {
-  display: flex;
+  @mixin atSmall {
+    display: flex;
+    align-items: center;
+  }
 }

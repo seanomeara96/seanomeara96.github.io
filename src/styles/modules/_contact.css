@@ -1,8 +1,10 @@
 .contact {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-top: 1rem;
+  a {
+    margin-right: 1rem;
+  }
   font-size: 1.6rem;
   height: 100%;
 }
