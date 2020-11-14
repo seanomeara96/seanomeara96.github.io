@@ -1,7 +1,0 @@
-.footer {
-  margin-bottom: 2rem;
-  text-align: center;
-  @mixin atMedium {
-    text-align: left;
-  }
-}

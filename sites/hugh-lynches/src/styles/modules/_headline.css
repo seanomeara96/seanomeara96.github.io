@@ -1,8 +1,0 @@
-.headline {
-  @mixin atMedium {
-    margin-top: 0;
-  }
-  &--center {
-    text-align: center;
-  }
-}

@@ -1,9 +1,0 @@
-.full-img {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  object-position: center;
-  object-fit: cover;
-  display: block;
-  backface-visibility: hidden;
-}
