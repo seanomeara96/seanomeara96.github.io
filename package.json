@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp clean && node list && webpack",
+    "build": "webpack",
     "dev": "webpack-dev-server"
   },
   "author": "",
